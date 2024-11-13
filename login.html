@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LOGIN INTO SHOPPING HAT</title>
+    <link rel="stylesheet" href="./shop.css">
+
+</head>
+
+<body style=" background-image: url('images.jfif');background-repeat: no-repeat;background-attachment: fixed;
+background-size: 100% 100%;">
+    <br>
+    <div class="center">
+        <form name="login" onsubmit="return lg()" method="post">
+            <img src="login.jpg" alt="user login" width="250px" height="200px"><br>
+            <h1 style="text-align: center;text-size-adjust: 25px;">USER LOGIN</h1>
+            <label>Email_id</label>
+            <input type="text" placeholder="Enter your email" name="usn" id="usn"><br><br>
+            <label>Password</label>
+            <input type="Password" id="vis" placeholder="Enter your password" name="psn" id="psn"><br><br>
+            <input type="checkbox" onclick="myFunction()">Show Password <br><br>
+            <button type="submit" id="sub"
+                style="background-color:rgb(44, 34, 233);margin-left:auto;margin-right:auto;display:block;"
+                onsubmit="fun()">Login</button>
+            <center><a href="./form.html" style="color: rgb(222, 6, 6);"><h3>Don't have an account</h3></a></center>
+            <script>
+                function fun() {
+                    
+                    alert("login success!!!!");
+                }
+            </script>
+            <script>
+                function myFunction() {
+                    var Password = document.getElementById("vis");
+                    if (Password.type == "password") {
+                        Password.type = "text";
+                    }
+                    else {
+                        Password.type = "password";
+                    }
+                }
+
+
+function lg(){
+user = document.forms["login"]["usn"]
+pass= document.forms["login"]["psn"]
+
+if(user.value==""){
+alert("enter the user name");
+user.focus()
+return false;
+}
+
+else if(pass.value==""){
+alert("enter the password");
+pass.focus()
+return false;
+}
+
+else if(user.value=="Admin" && pass.value=="1234"){
+alert("login success!!!!!");
+
+window.location.href='./shop.html'
+return false;
+}
+
+else{
+alert("login details not found!!!!!");
+user.focus()
+return false;
+}}
+
+            </script>
+        </form>
+    </div>
+</body>
+
+</html>

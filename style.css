@@ -1,0 +1,26 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(238, 201, 201);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#642bff, #ff22e6);
+    border-radius: 5px;
+}
+.flow{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+.new1{
+    display: inline;
+    width: 100px;
+    color: white;
+    height: 27px;
+}
+#con{
+    background-color: aliceblue;
+}

@@ -1,0 +1,12 @@
+#img1{
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+}
+body{
+    background-image: url(./snow.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
